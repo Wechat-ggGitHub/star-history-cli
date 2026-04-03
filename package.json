@@ -13,10 +13,14 @@
     "png"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Wechat-ggGitHub",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Wechat-ggGitHub/star-history-cli.git"
+  },
+  "homepage": "https://github.com/Wechat-ggGitHub/star-history-cli#readme",
+  "bugs": {
+    "url": "https://github.com/Wechat-ggGitHub/star-history-cli/issues"
   },
   "type": "module",
   "bin": {
