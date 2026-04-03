@@ -1,0 +1,58 @@
+{
+  "name": "star-history-cli",
+  "version": "1.0.0",
+  "description": "Generate star history trend charts for GitHub open-source projects as PNG/SVG images",
+  "keywords": [
+    "github",
+    "star",
+    "history",
+    "chart",
+    "cli",
+    "xkcd",
+    "svg",
+    "png"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "type": "module",
+  "bin": {
+    "star-history": "./dist/cli.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "d3-axis": "^3.0.0",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0",
+    "d3-shape": "^3.2.0",
+    "jsdom": "^24.0.0",
+    "ora": "^8.0.1",
+    "sharp": "^0.33.2",
+    "svgo": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/d3-axis": "^3.0.6",
+    "@types/d3-scale": "^4.0.8",
+    "@types/d3-selection": "^3.0.10",
+    "@types/d3-shape": "^3.1.6",
+    "@types/jsdom": "^21.1.6",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
