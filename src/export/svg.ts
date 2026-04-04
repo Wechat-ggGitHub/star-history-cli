@@ -3,7 +3,15 @@ import { optimize } from "svgo";
 export async function exportSvg(svgString: string): Promise<string> {
   const result = optimize(svgString, {
     plugins: [
-      "preset-default",
+      {
+        name: "preset-default",
+        params: {
+          overrides: {
+            // Keep viewBox for proper scaling
+            removeViewBox: false,
+          },
+        },
+      },
       "removeDoctype",
       "removeComments",
       "cleanupAttrs",
